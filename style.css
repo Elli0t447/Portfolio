@@ -1,0 +1,296 @@
+/* *
+{
+    outline: 2px solid red;
+} */
+
+:root
+{
+    --fondo : #FBEAFF;
+    --base: #845EC2;
+    --base2: #B39CD0;
+    --color: #00C9A7;
+}
+
+a
+{
+    text-decoration: none !important;
+}
+
+
+body
+{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 0.5fr 0.2fr;
+    grid-template-areas: 
+        "sidebar main main main"
+        "sidebar main main main"
+        "sidebar footer footer footer";
+    height: 265em;
+}
+
+.sidebar
+{
+    background-color: var(--base);
+    grid-area: sidebar;
+    position: fixed;
+    width: 17em;
+    height: 100%;
+    z-index: 20;
+    color: var(--fondo);
+}
+
+.sidebar > h1
+{
+    font-size: 2em;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.side-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-direction: column;
+    
+}
+
+.side-container > a
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fondo);
+    gap: 20px;
+    border-radius: 20px;
+    height: 5vh;
+    width: 22vh;
+    padding: 5px;
+    font-size: 0.8em;
+    border: 2px solid var(--fondo);
+    transition: 425ms ease;
+}
+
+.side-container > a:hover
+{
+    background-color: var(--base2);
+    transition: 425ms ease;
+}
+
+.side-contact
+{
+    position: relative;
+    top: 15em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.sidebar-icons
+{
+    width: 30px;
+    height: 30px;
+}
+
+h1
+{
+    font-size: 4em;
+}
+
+h2
+
+{
+    font-size: 2em;
+}
+main
+{
+    background-color: var(--fondo);
+    grid-area: main;
+}
+
+.hero
+{
+    height: 40em;
+    background-color: var(--fondo);
+}
+
+.hero-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.hero-txt
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: var(--color);
+    font-weight: bolder;
+}
+
+.hero-boton
+{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    color: var(--fondo);
+    top: 28em;
+    left: 36em;
+    width: 30vh;
+    border: 3px solid var(--base);
+    background-color: var(--base);
+    border-radius: 30px;
+}
+
+.hero-img
+{
+    width: 50%;
+    height: 100%;
+}
+
+.hero-img > img
+{
+    width: 50em;
+    height: 40em;
+}
+
+
+/* PERFIL */
+
+
+.perfil-sect
+{
+    position: relative;
+    height: 50em;
+    background-color: var(--base2);
+    color: var(--fondo);
+}
+
+.perfil-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.perfil-container > p
+{
+    font-size: 2em;
+    width: 80vh;
+}
+
+footer
+{
+    background-color: var(--base2);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fondo);
+    flex-direction: column;
+}
+
+
+/* IDIOMAS */
+
+
+.idioma-sect
+{
+    position: relative;
+    background-color: var(--fondo);
+    height: 50em;
+}
+
+.idioma-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--base2);
+    flex-direction: column;
+}
+
+.idioma-container > p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 2em;
+}
+
+.idioma-bandera
+{
+    width: 14vh;
+    height: 10vh;
+}
+
+
+/* EXPERIENCIA */
+
+
+.experiencia-sect
+{
+    position: relative;
+    background-color: var(--base2);
+    height: 50em;
+}
+
+.experiencia-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fondo);
+    flex-direction: column;
+}
+
+.experiencia-container > p
+{
+    font-size: 2em;
+}
+
+.experiencia-container > p > span
+{
+    color: var(--base);
+    font-weight: 1000;
+}
+
+/* ESTUDIOS */
+
+
+.estudios-sect
+{
+    background-color: var(--fondo);
+    height: 50em;
+}
+
+.estudios-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--base2);
+    flex-direction: column;
+    font-size: 1.7em;
+    font-weight: bolder;
+}
+
+.estudios-container > p > span
+{
+    color: var(--color);
+    font-weight: 1000;
+}
